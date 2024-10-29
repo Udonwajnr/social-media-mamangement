@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ArrowRight, BarChart, Globe, Users } from 'lucide-react'
-
+import FacebookLoginButton from './components/FacbookLogin'
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -15,7 +15,7 @@ export default function Home() {
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </section>
-
+    <FacebookLoginButton/>
         <section className="grid md:grid-cols-3 gap-8 py-12">
           <Card>
             <CardHeader>
